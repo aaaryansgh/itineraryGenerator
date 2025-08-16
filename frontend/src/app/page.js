@@ -13,7 +13,7 @@ const page = () => {
     const [loading, setLoading] = useState(false);
     const generateItinerary = async () => {
     setLoading(true);
-    const res = await axios.post("http://localhost:2000/generate-itinerary", {
+    const res = await axios.post("https://travelplanner-backend-dele.onrender.com/generate-itinerary", {
       destination,
       days,
       interest,

@@ -6,7 +6,7 @@ const OpenAI=require("openai");
 const client=new OpenAI({apiKey:process.env.OPENAI_API_KEY})
 app.use(express.json());
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://itinerarygenerator-backend.onrender.com",
     credentials:true,
 }))
 
